@@ -1,4 +1,5 @@
-import {AuthProvider} from "../components/contexts/Auth";
+import { AuthProvider } from '../components/contexts/Auth'
+import MyFooter from '../components/layouts/MyFooter'
 
 const Index = () => {
   return (
@@ -6,6 +7,7 @@ const Index = () => {
       <AuthProvider>
         hoge
       </AuthProvider>
+      <MyFooter/>
     </main>
   )
 }

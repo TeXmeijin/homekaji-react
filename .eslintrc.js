@@ -21,6 +21,7 @@ module.exports = {
     '@typescript-eslint'
   ],
   'rules': {
+    'object-curly-spacing': ['error', 'always'],
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'indent': [

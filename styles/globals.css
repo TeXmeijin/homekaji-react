@@ -18,3 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+footer svg {
+  fill: currentColor;
+}

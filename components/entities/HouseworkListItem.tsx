@@ -2,7 +2,7 @@ import React from 'react'
 
 type Props = {housework: {name: string, point: number, id: string}}
 
-export const HouseworkListItem = ({housework}: Props) => {
+export const HouseworkListItem = ({ housework }: Props) => {
   return (
     <li
       className="flex items-center justify-between py-6 px-6 shadow rounded-2xl"

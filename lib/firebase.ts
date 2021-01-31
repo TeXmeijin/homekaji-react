@@ -1,13 +1,10 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
-import {Storage} from 'firebase/storage';
-import {Auth} from 'firebase/auth'
-import {Firestore} from 'firebase/firestore'
 
 const useEmulator = () => process.env.USE_FIREBASE_EMULATOR
 
 const initialize = () => {
-  if (firebase.apps.length > 0) return;
+  if (firebase.apps.length > 0) return
 
   firebase.initializeApp({
     apiKey: process.env.NEXT_PUBLIC_FIREBASE_APIKEY,
@@ -24,9 +21,9 @@ export const setUpFirebase = () => {
   initialize()
 }
 
-let auth: Auth
-let firestore: Firestore
-let storage: Storage
+let auth: firebase.auth.Auth
+let firestore: firebase.firestore.Firestore
+let storage: firebase.storage.Storage
 
 export const useAuth = () => {
   auth = firebase.app().auth()
